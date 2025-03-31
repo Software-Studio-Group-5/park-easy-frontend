@@ -1,20 +1,15 @@
-This is a branch of master `park-easy-frontend` to implement parking history for one user.
-User infroamtion can be fetched from database , reservations are informed by REST API.
+# Project description - frontend
 
-### Flow of logic
+Park Easy, as the name suggests, makes reservations of parking spaces easy! As a
+registered user, You can select a city with one of our venues and create a
+reservation of a parking space. Fast, easy and reliable!
 
-!!UWAGA!!
-The src is intended to match the functional requirements such as displaying reservation history(including reservation ID, parkingSpaceID) with user inforamtion (user name, email address).
+The frontend of Park Easy application written in Next.js 14 using TailwindCss.
 
-1. It should implement `server` and `client` componets
-2. By `getAll` function on backend controller, reservation information can be transformed.
-3. By `member/login` , the loggined user should get the user information
-   3.1 To get the user information, it should be authenticated and generate session.
-   3.2 After feteching the user information, it should be stored on cookies.
-   3.3 The program will use the cookies to rendering the page.
+## Features
 
-### Example of rendering
-
-1. First required user login ![alt text](image.png)
-2. Rendering the user information with reservation history.
-   ![alt text](image-1.png)
+- Session-based user authentication
+- Integration of Stripe payments
+- Middleware-based page access
+- Global cache provider
+- Integration of GoogleMaps API
